@@ -211,4 +211,321 @@ In 2020s, AI like ChatGPT and Gemini show how advanced deep learning has become.
 
 ---
 
-Would you like me to format all this into a **PDF “Unit 2 AI Notes for Exam”** (with icons and clear headings) so you can print or share it with students?
+
+
+## 🧠 **1. Types of Clustering (7 Marks)**
+
+Clustering means **grouping similar data points together** without knowing their labels in advance. It is an **unsupervised learning technique** used to find hidden patterns or groups.
+
+### 🔹 1. **K-Means Clustering**
+
+* It divides data into *K* number of clusters.
+* Each cluster has a center called a *centroid*.
+* The algorithm minimizes the distance between points and their centroids.
+  🧩 *Example:* An online store groups customers into 3 types – low spenders, medium spenders, and premium spenders based on purchase history.
+
+### 🔹 2. **Hierarchical Clustering**
+
+* Builds clusters in a **tree-like structure** (called dendrogram).
+* Two types:
+
+  * *Agglomerative* (bottom-up): starts with single points and merges them.
+  * *Divisive* (top-down): starts with all data and splits into smaller clusters.
+    🧩 *Example:* Grouping animals based on their features – mammals, birds, reptiles, etc.
+
+### 🔹 3. **DBSCAN (Density-Based Spatial Clustering)**
+
+* Groups together data points that are close and marks far points as *outliers*.
+  🧩 *Example:* Detecting unusual transactions in banking data.
+
+### ✅ **Applications:**
+
+* Customer segmentation
+* Market analysis
+* Image segmentation
+* Fraud detection
+
+---
+
+## 🤖 **2. Types of Machine Learning (7 Marks)**
+
+Machine Learning means enabling computers to learn from experience or data without being explicitly programmed.
+
+### 🔹 1. **Supervised Learning**
+
+* Model is trained on labeled data (inputs with known outputs).
+* Used for prediction and classification.
+  🧩 *Example:* Predicting student marks from study hours.
+
+**Algorithms:** Linear Regression, Decision Tree, Support Vector Machine.
+
+---
+
+### 🔹 2. **Unsupervised Learning**
+
+* Data has no output labels.
+* System finds hidden patterns or groups on its own.
+  🧩 *Example:* Grouping news articles by topic automatically.
+
+**Algorithms:** K-Means, Hierarchical Clustering, PCA.
+
+---
+
+### 🔹 3. **Reinforcement Learning**
+
+* Model learns through *trial and error* using rewards and punishments.
+* Focus is on decision making.
+  🧩 *Example:* Teaching a robot to walk or an AI to play chess.
+
+**Algorithms:** Q-learning, Deep Q Network (DQN).
+
+---
+
+### ✅ **Summary:**
+
+| Type          | Data             | Example        | Output            |
+| ------------- | ---------------- | -------------- | ----------------- |
+| Supervised    | Labeled          | Predict marks  | Known result      |
+| Unsupervised  | Unlabeled        | Group students | Hidden pattern    |
+| Reinforcement | Experience-based | Game playing   | Learn best action |
+
+---
+
+## ⚙️ **3. Types of Activation Functions in Neural Networks (7 Marks)**
+
+Activation functions decide whether a neuron in the neural network should *activate* or not. They bring **non-linearity** to the model.
+
+### 🔹 1. **Sigmoid Function**
+
+* Gives output between 0 and 1.
+* Used in binary classification.
+  🧩 *Example:* Spam or not spam email classification.
+
+Formula:
+[
+f(x) = \frac{1}{1 + e^{-x}}
+]
+
+---
+
+### 🔹 2. **Tanh Function (Hyperbolic Tangent)**
+
+* Output between -1 and 1.
+* Better than sigmoid for centered data.
+  🧩 *Example:* Used in sentiment analysis models (positive or negative).
+
+---
+
+### 🔹 3. **ReLU (Rectified Linear Unit)**
+
+* Output = 0 if input < 0, else output = input.
+* Fast and efficient.
+  🧩 *Example:* Image processing and object detection (like face unlock).
+
+---
+
+### 🔹 4. **Leaky ReLU**
+
+* Similar to ReLU but allows small negative output to avoid neuron death.
+
+---
+
+### ✅ **Importance:**
+
+* Adds non-linearity.
+* Helps model learn complex patterns.
+* Improves performance in deep networks.
+
+---
+
+## 🧬 **4. Comparison between Artificial NN and Biological NN (7 Marks)**
+
+| Feature    | Artificial Neural Network      | Biological Neural Network      |
+| ---------- | ------------------------------ | ------------------------------ |
+| Basic Unit | Artificial Neuron              | Brain Neuron                   |
+| Signal     | Numeric values (0/1)           | Electrical impulses            |
+| Structure  | Layers (Input, Hidden, Output) | Neurons connected via synapses |
+| Learning   | Data-based training            | Experience & emotions          |
+| Speed      | Very fast but linear           | Slower but parallel            |
+| Example    | ChatGPT, Alexa                 | Human brain thinking           |
+
+🧩 *Example:*
+
+* ANN learns to identify cats by training on thousands of images.
+* Humans recognize cats naturally after few experiences.
+
+✅ **Conclusion:**
+Artificial Neural Networks are inspired by the human brain but are much simpler and only learn through data, not emotions.
+
+---
+
+## 🧩 **5. Comparison between Inductive and Deductive Learning (7 Marks)**
+
+| Basis    | Inductive Learning            | Deductive Learning            |
+| -------- | ----------------------------- | ----------------------------- |
+| Approach | From examples to general rule | From rule to specific example |
+| Data     | Needs observations            | Needs known rules             |
+| Learning | Bottom-up                     | Top-down                      |
+| Example  | Machine learning from data    | Solving math using formulas   |
+| Goal     | Generate hypothesis           | Apply existing knowledge      |
+
+🧩 *Example:*
+
+* **Inductive:** Seeing many mangoes are sweet → concluding “All mangoes are sweet.”
+* **Deductive:** Knowing the rule “All mangoes are sweet” → expecting next mango to be sweet.
+
+✅ **Use in AI:**
+
+* Inductive learning is used in ML models.
+* Deductive learning is used in logic-based AI.
+
+---
+
+## 🎓 **6. Comparison between Supervised and Unsupervised Learning (7 Marks)**
+
+| Basis     | Supervised Learning            | Unsupervised Learning    |
+| --------- | ------------------------------ | ------------------------ |
+| Data      | Labeled                        | Unlabeled                |
+| Output    | Known target                   | Hidden pattern           |
+| Example   | Predict salary from experience | Group people by interest |
+| Algorithm | SVM, Decision Tree             | K-means, DBSCAN          |
+| Accuracy  | Easy to evaluate               | Hard to measure          |
+
+🧩 *Example:*
+
+* Supervised: Predicting exam results.
+* Unsupervised: Grouping students by hobbies.
+
+✅ **Use:**
+Supervised → Prediction tasks
+Unsupervised → Pattern discovery
+
+---
+
+## 🕸️ **7. Different Types of Connection Architecture (7 Marks)**
+
+1. **Single Layer Feedforward Network**
+
+   * Input → Output, no hidden layers.
+     🧩 Example: Simple AND/OR gate learning.
+
+2. **Multi-Layer Feedforward Network**
+
+   * Has hidden layers for complex learning.
+     🧩 Example: Image classification.
+
+3. **Recurrent Neural Network (RNN)**
+
+   * Has loops to remember previous inputs.
+     🧩 Example: Chatbots, speech recognition.
+
+4. **Convolutional Neural Network (CNN)**
+
+   * Used for image and video data.
+     🧩 Example: Face unlock on phones.
+
+5. **Modular Neural Network**
+
+   * Multiple small networks combine to make a final decision.
+     🧩 Example: Self-driving car – one module detects people, another detects signals.
+
+✅ **Conclusion:**
+Different architectures are used for different tasks like images, sequences, or combined decision-making.
+
+---
+
+## ⚙️ **8. Perceptron Learning Algorithm (7 Marks)**
+
+A **Perceptron** is the simplest form of a neural network used for binary classification.
+
+### 🔹 Steps:
+
+1. Initialize weights randomly
+2. Input multiplied by weights
+3. Add bias and apply activation function
+4. Compare output with actual output
+5. Adjust weights if prediction is wrong
+6. Repeat until error is minimal
+
+🧩 *Example:*
+A perceptron can learn to decide:
+
+* If temperature > 30°C → “Hot Day” (1)
+* Else → “Not Hot” (0)
+
+✅ **Applications:**
+
+* Spam email detection
+* Binary classification problems
+
+---
+
+## 🔍 **9. Clustering Algorithm (7 Marks)**
+
+### 🔹 Common Algorithms:
+
+1. **K-Means** – Groups data into K clusters.
+2. **Hierarchical** – Builds tree of clusters.
+3. **DBSCAN** – Density-based grouping.
+
+🧩 *Example:*
+Amazon groups users with similar purchase behavior.
+
+✅ **Applications:**
+
+* Market segmentation
+* Image grouping
+* Fraud detection
+
+---
+
+## ⚖️ **10. Support Vector Classifier (7 Marks)**
+
+SVC finds a **line (or hyperplane)** that best separates two classes.
+It maximizes the *margin* between the nearest data points (support vectors).
+
+🧩 *Example:*
+Classifying emails as spam (1) or not spam (0).
+
+✅ **Advantages:**
+
+* Works well with small data
+* Effective for both linear and non-linear data
+
+---
+
+## 🧩 **11. Kernels (7 Marks)**
+
+Kernels help SVM work with **non-linear data** by mapping it to higher dimensions.
+
+### 🔹 Types:
+
+1. **Linear Kernel:** For linearly separable data
+2. **Polynomial Kernel:** For curved decision boundaries
+3. **RBF Kernel:** Handles complex patterns
+
+🧩 *Example:*
+If points cannot be separated by a straight line, RBF kernel maps them into 3D space where a plane can separate them easily.
+
+---
+
+## ⚙️ **12. Support Vector Machine (SVM) (7 Marks)**
+
+SVM is a supervised learning algorithm used for classification and regression.
+
+### 🔹 Working:
+
+* Draws a hyperplane that best separates classes with **maximum margin**.
+* Uses **support vectors** (closest data points) to define boundary.
+
+🧩 *Example:*
+Classifying handwriting digits or detecting fake news articles.
+
+✅ **Applications:**
+
+* Text classification
+* Image recognition
+* Fraud detection
+
+---
+
